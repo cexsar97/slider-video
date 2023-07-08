@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="main.js" defer></script>
+    <title>Slider-video</title>
+</head>
+
+<body>
+    <section>
+        <div class="bannerVideo" id="slideShow">
+            <video src="images/video1.mp4" autoplay muted loop class="active"></video>
+            <video src="images/video2.mp4" autoplay muted loop></video>
+            <video src="images/video3.mp4" autoplay muted loop></video>
+            <video src="images/video4.mp4" autoplay muted loop></video>
+        </div>
+        <div class="container">
+            <header id="navbar">
+                <a href="#" class="logo">World</a>
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">Destination</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <span class="menuIcon" onclick="toggleMenu()"></span>
+
+            </header>
+            <div class="content">
+                <div class="bannerText" id="slideShowText">
+                    <div class="active">
+                        <h2>Tokyio</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Blanditiis nobis harum eveniet doloribus velit laboriosam
+                            debitis, sapiente repellat, corrupti iste eum voluptatem
+                            cumque consectetur quos tempora eius amet! Facilis,
+                            similique?
+                        </p>
+                    </div>
+
+                    <div>
+                        <h2>Paris</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Blanditiis nobis harum eveniet doloribus velit laboriosam
+                            debitis, sapiente repellat, corrupti iste eum voluptatem
+                            cumque consectetur quos tempora eius amet! Facilis,
+                            similique?
+                        </p>
+                    </div>
+
+                    <div>
+                        <h2>Egypt</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Blanditiis nobis harum eveniet doloribus velit laboriosam
+                            debitis, sapiente repellat, corrupti iste eum voluptatem
+                            cumque consectetur quos tempora eius amet! Facilis,
+                            similique?
+                        </p>
+                    </div>
+
+                    <div>
+                        <h2>Maldives</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Blanditiis nobis harum eveniet doloribus velit laboriosam
+                            debitis, sapiente repellat, corrupti iste eum voluptatem
+                            cumque consectetur quos tempora eius amet! Facilis,
+                            similique?
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <ul class="controls">
+                <li onclick="prevSlide();prevSlideText();"><img src="images/left.png"></li>
+                <li onclick="nextSlide();nextSlideText();"><img src="images/right.png"></li>
+            </ul>
+        </div>
+    </section>
+
+</body>
+
+</html>
